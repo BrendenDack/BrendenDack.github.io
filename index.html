@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en=US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal website of Brenden Dack">
+    <title>Brenden Dack - Personal Website</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/navigation_bar.css">
+    <link rel="stylesheet" href="CSS/animations.css">
+    <link rel="stylesheet" href="CSS/mobile.css">
+    <!--<link rel="stylesheet" href="CSS/light-theme.css" id="light-theme">
+    <link rel="stylesheet" href="CSS/dark-theme.css" id="dark-theme" disabled> -->
+    
+</head>
+<div id="wipe"></div>
+<body>
+
+    <h1 id="main-heading">Brenden Dack</h1>
+
+    <!--<img src="cat-551554_1280.jpg" alt="Professional Picture of Brenden Dack" width="245" height="256" class="profile-image"> -->
+
+    <!-- Navigation Bar Code -->
+    <nav class="navbar">
+        
+      <!-- Hamburger Icon for mobile selection-->
+        <div class="hamburger" id = "hamburger" onclick="toggleMenu()">&#9776;</div>
+
+        <div class="nav-buttons" id="navMenu">
+            <button onclick="loadPage('home')">Home</button>
+            <button onclick="loadPage('skills')">Skills</button>
+            <button onclick="loadPage('projects')">Projects</button>
+            <button onclick="loadPage('about')">About Me</button>
+            <button onclick="loadPage('contact')">Contact Me</button>
+        </div>
+
+        <div class="theme-toggle">
+          <span class="icon">🌞</span>
+          <label class="switch">
+            <input type="checkbox" id="themeToggle">
+            <span class="slider"></span>
+          </label>
+          <span class="icon">🌙</span>
+        </div>
+    </nav>
+    
+    <div id="content"></div>
+    
+    <script src="JavaScript/dark_mode.js">
+      // Javascript for dark mode stuff
+    </script>
+    <script src="JavaScript/pages.js">
+      // Javascript for loading different pages
+    </script>
+</body>
+</html>
